@@ -9,17 +9,17 @@ const siteUrl = 'https://www.quintasdumonte.com.br'
 
 // 1. SEO e Metadados
 useSeoMeta({
-  title: 'Sítios e Terrenos em Domingos Martins | Quintas Dumonte – Montanhas Capixabas',
-  description: 'Sítios e terrenos em Domingos Martins. Condomínio fechado para lazer, descanso e contato com a natureza nas Montanhas Capixabas. Agende sua visita.',
-  ogTitle: 'Sítios e Terrenos em Domingos Martins | Quintas Dumonte',
-  ogDescription: 'Sítios e terrenos em Domingos Martins. Condomínio fechado para lazer, descanso e contato com a natureza nas Montanhas Capixabas. Agende sua visita.',
+  title: 'Terrenos e chácaras em sítio de lazer em Domingos Martins | Quintas Dumonte – Montanhas Capixabas',
+  description: 'Terrenos e chácaras em sítio de lazer em Domingos Martins – Montanhas Capixabas, descanso e contato com a natureza nas Montanhas Capixabas. Agende sua visita.',
+  ogTitle: 'Terrenos e chácaras em sítio de lazer em Domingos Martins | Quintas Dumonte – Montanhas Capixabas',
+  ogDescription: 'Terrenos e chácaras em sítio de lazer em Domingos Martins – Montanhas Capixabas, descanso e contato com a natureza nas Montanhas Capixabas. Agende sua visita.',
   ogImage: `${siteUrl}/quintas-social.jpg`,
   ogUrl: siteUrl,
   ogType: 'website',
   ogLocale: 'pt_BR',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Sítios e Terrenos em Domingos Martins | Quintas Dumonte',
-  twitterDescription: 'Sítios e terrenos em Domingos Martins. Condomínio fechado para lazer.',
+  twitterTitle: 'Terrenos e chácaras em sítio de lazer em Domingos Martins | Quintas Dumonte – Montanhas Capixabas',
+  twitterDescription: 'Terrenos e chácaras em sítio de lazer em Domingos Martins | Quintas Dumonte – Montanhas Capixabas.',
   twitterImage: `${siteUrl}/quintas-social.jpg`,
 })
 
@@ -48,8 +48,8 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LandPlot",
-        "name": "Sítios e Terrenos Quintas Dumonte",
-        "description": "Terrenos e sítios de lazer em Domingos Martins, região das Montanhas Capixabas.",
+        "name": "Terrenos e chácaras em sítio de lazer Quintas Dumonte",
+        "description": "Terrenos e chácaras em sítio de lazer em Domingos Martins, região das Montanhas Capixabas.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Domingos Martins",
@@ -76,7 +76,7 @@ useHead({
 </script>
 
 <template>
-  <div class="flex flex-col w-full">
+  <div class="bg-white flex flex-col w-full">
     
     <!-- 
       Seção Hero:

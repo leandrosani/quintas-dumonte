@@ -10,30 +10,30 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
 </script>
 
 <template>
-  <section class="relative isolate rounded-t-[25px] overflow-hidden bg-[#101010] min-h-[calc(100vh-65px)] flex items-center">
+  <section class=" relative isolate rounded-t-[35px] overflow-hidden bg-[#101010] min-h-[calc(100vh-65px)] flex items-center">
     
     <img 
-      src="/terrenos.jpg" 
+      src="/hero-sitio-terreno.jpg" 
       alt="Vista aérea da pedra azul" 
-      class=" bg-white absolute top-[-80px] left-0 w-full h-[120%] -z-10 object-cover brightness-50"
+      class=" absolute top-[-80px] left-0 w-full h-[120%] -z-10 object-cover brightness-70"
       fetchpriority="high"
     />
 
 
     <div class="absolute inset-0 -z-10 bg-gradient-to-t from-[#101010]/80 via-[#101010]/40 to-transparent"></div>
     
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col justify-center items-center gap-6">
+    <div class=" mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col justify-center items-center gap-6">
       
-      <h1 class="text-[#CBBD93] text-6xl font-bold">
+      <h1 class="text-[#CBBD93] text-6xl font-bold drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
         <span class="italic">Quintas</span> Dumonte
       </h1><br/>
       
 
-      <h2 class="mx-auto max-w-4xl -mt-[2rem] text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+      <h2 class="mx-auto ... text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
         Sítio de lazer fechado e familiar.<br class="hidden sm:block" />
       </h2>
 
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+      <p class="mx-auto ... text-gray-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
         Adquira sua chácara com facilidade, parcelamos em até <span class="font-semibold">60x</span><br/> <span class="italic text-sm text-[#CBBD93]">Confira as condições.</span>
       </p>
 
