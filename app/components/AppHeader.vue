@@ -69,7 +69,7 @@ const navLinks = [
           v-for="link in navLinks" 
           :key="link.hash" 
           :href="link.hash"
-          class="text-sm font-medium text-gray-700 hover:text-[#CBBD93] transition-colors"
+          class="text-md font-medium text-gray-700 hover:text-[#CBBD93] transition-colors"
         >
           {{ link.label }}
         </a>
@@ -77,7 +77,7 @@ const navLinks = [
 
       <!-- CTA DESKTOP -->
       <div class="hidden md:flex">
-        <a :href="whatsappLink" target="_blank" class="rounded-full border border-[#101010] px-5 py-2 text-sm font-semibold text-[#101010] hover:bg-[#101010] hover:text-white transition-colors duration-300">
+        <a :href="whatsappLink" target="_blank" class="rounded-md bg-[#CBBD93] px-5 py-3 text-base font-semibold text-[#101010] shadow-sm hover:bg-[#E3D38B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D8C67A] transition-all duration-300 transform hover:scale-105">
           Agendar visita
         </a>
       </div>

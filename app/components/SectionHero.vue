@@ -29,7 +29,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       </h1><br/>
       
 
-      <h2 class="mx-auto ... text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+      <h2 class="mx-auto ... text-4xl text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
         Sítio de lazer fechado e familiar.<br class="hidden sm:block" />
       </h2>
 

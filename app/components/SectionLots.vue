@@ -3,6 +3,9 @@
  * Componente: SectionLots (Terrenos à Venda)
  * Estrutura: 5 Lotes com alinhamento centralizado (Flexbox).
  */
+const whatsappNumber = '5527999720808' 
+const whatsappMessage = 'Olá! Gostaria de agendar uma visita ao Quintas Dumonte.'
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
 const lots = [
   {
@@ -97,7 +100,8 @@ const getStatusColor = (status: string) => {
 
             <div class="mt-6 pt-4">
               <a 
-                href="#contact" 
+                :href="whatsappLink" 
+                target="_blank"
                 class="flex w-full items-center justify-center rounded-md border border-[#101010] px-4 py-2 text-sm font-semibold text-[#101010] hover:bg-[#101010] hover:text-white transition-colors"
               >
                 Consultar valor
