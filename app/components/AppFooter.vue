@@ -34,15 +34,17 @@ const currentYear = new Date().getFullYear()
 
         <div class="space-y-4">
           <h4 class="text-sm font-semibold text-black uppercase tracking-wider">Explorar</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-[#D8C67A] transition-colors">O Refúgio</a></li>
-            <li><a href="#location" class="hover:text-[#D8C67A] transition-colors">Localização</a></li>
-            <li><a href="#gallery" class="hover:text-[#D8C67A] transition-colors">Galeria</a></li>
-            <li><a href="#lots" class="hover:text-[#D8C67A] transition-colors">Terrenos à venda</a></li>
-            <li><a href="#features" class="hover:text-[#D8C67A] transition-colors">Nossa hitória</a></li>
-          </ul>
+          <nav>
+            <ul class="">
+              <li v-for="link in navLinks" :key="link.hash">
+                <a :href="link.hash">
+                  {{ link.label }}
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
+        
         <div class="space-y-4">
           <h4 class="text-sm font-semibold text-black uppercase tracking-wider">Contato</h4>
           <div class="space-y-2 text-sm">

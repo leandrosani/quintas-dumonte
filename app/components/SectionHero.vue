@@ -29,12 +29,12 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         </h1>
 
         <p class="mx-auto ... text-xl  text-gray-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-          Adquira sua chácara com facilidade, parcelamos em até <span class="font-semibold">60x</span><br/> <span class="italic text-[#CBBD93]">Confira as condições.</span>
+          Adquira sua chácara com facilidade, parcelamos em até <span class="font-semibold">60x</span><br/>
         </p>
 
 
       <div class=" flex items-center justify-center gap-x-6">
-        <a href="#location" class="text-sm font-semibold leading-6 text-white hover:text-[#D8C67A] transition-colors flex items-center gap-1">
+        <a href="#lots" class="text-sm font-semibold leading-6 text-white hover:text-[#D8C67A] transition-colors flex items-center gap-1">
           Conhecer detalhes <span aria-hidden="true">→</span>
         </a>
       </div>

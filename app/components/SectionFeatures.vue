@@ -7,14 +7,13 @@
 </script>
 
 <template>
-  <section class="py-16 sm:py-32 bg-gradient-to-r from-white via-[#f7f4e4d3] to-white relative isolate overflow-hidden">
+  <section class="py-16 sm:py-32 relative">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="text-base font-semibold leading-7 text-[#81785d] uppercase tracking-wide">
           Venha para o Quintas Dumonte
         </h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-[#101010] sm:text-4xl">
+        <p class="mt-2 text-2xl font-bold tracking-tight text-[#101010] sm:text-4xl">
           Nossa história
         </p>
         <p class="mt-6 text-lg leading-8 text-gray-600">

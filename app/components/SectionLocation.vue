@@ -64,7 +64,7 @@ const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
           <h2 class="mb-6 text-base font-semibold leading-7 text-[#7c5f42] uppercase tracking-wide">
             Localização Privilegiada
           </h2>
-          <h3 class="mb-6 text-3xl font-bold tracking-tight text-[#101010] sm:text-4xl">
+          <h3 class="mb-6 text-2xl font-bold tracking-tight text-[#101010] sm:text-4xl">
             O clima das montanhas, <br />
             no interior de Domingos Martins.
           </h3>

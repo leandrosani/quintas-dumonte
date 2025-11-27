@@ -39,6 +39,14 @@ const lots = [
     image: '/terreno-1000-mata.jpg',
     status: 'Disponível'
   },
+   {
+    id: 3,
+    title: 'Chácara C',
+    area: '1.000 m²',
+    description: 'Situado ao lado de uma bela área de mata, garantindo privacidade e contato direto com a natureza.',
+    image: '/terreno-1000-mata.jpg',
+    status: 'Disponível'
+  },
   // Adicione mais lotes aqui...
 ]
 
@@ -156,17 +164,9 @@ const getStatusColor = (status: string) => {
         <h2 class="text-base font-semibold leading-7 text-[#81785d] uppercase tracking-wide">
           Disponibilidade
         </h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-[#101010] sm:text-4xl">
+        <h3 class="mt-2 mb-6 text-2xl font-bold tracking-tight text-[#101010] sm:text-4xl">
           Invista na sua qualidade de vida
-        </p>
-        <p class="mt-4 text-lg text-gray-600">
-          Escolha o lugar perfeito com segurança para você e sua família viverem momentos especiais.
-        </p>
-        
-        <div v-if="showControls" class="md:hidden flex items-center justify-end gap-2 mt-6 text-sm text-[#81785d] font-medium animate-pulse">
-          <span>Deslize para ver opções</span>
-          <UIcon name="i-heroicons-arrow-right" class="w-4 h-4" />
-        </div>
+        </h3>
       </div>
 
       <!-- CONTAINER RELATIVO -->
@@ -176,7 +176,7 @@ const getStatusColor = (status: string) => {
         <button 
           v-if="showControls"
           @click="scroll('left')"
-          class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border border-gray-200 p-3 rounded-full shadow-lg text-gray-600 hover:bg-[#D8C67A] hover:text-white hover:border-[#D8C67A] transition-all transform hover:scale-110 -ml-4 lg:-ml-6"
+          class="cursor-pointer flex md:flex absolute -left-1 top-1/2 -translate-y-1/2 z-10 bg-transparent backdrop-blur-sm border border-gray-200 p-3 rounded-full shadow-lg text-gray-600 md:hover:bg-[#D8C67A] md:hover:text-white md:hover:border-[#D8C67A] transition-all transform hover:scale-110 -ml-4 lg:-ml-6"
           aria-label="Anterior"
         >
           <UIcon name="i-heroicons-chevron-left" class="w-6 h-6" />
@@ -246,7 +246,7 @@ const getStatusColor = (status: string) => {
         <button 
           v-if="showControls"
           @click="scroll('right')"
-          class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border border-gray-200 p-3 rounded-full shadow-lg text-gray-600 hover:bg-[#D8C67A] hover:text-white hover:border-[#D8C67A] transition-all transform hover:scale-110 -mr-4 lg:-mr-6"
+          class="cursor-pointer flex md:flex absolute -right-1 top-1/2 -translate-y-1/2 z-10 bg-transparent backdrop-blur-sm border border-gray-200 p-3 rounded-full shadow-lg text-gray-600 md:hover:bg-[#CBBD93] md:hover:text-white md:hover:border-[#CBBD93] transition-all transform md-hover:scale-110 -mr-4 lg:-mr-6"
           aria-label="Próximo"
         >
           <UIcon name="i-heroicons-chevron-right" class="w-6 h-6" />

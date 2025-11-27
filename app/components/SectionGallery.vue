@@ -127,9 +127,9 @@ const onScroll = () => {
           <h2 class="text-base font-semibold leading-7 text-[#81785d] uppercase tracking-wide">
             Lazer e Conforto
           </h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+          <h3 class="mt-2 text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl">
             Estrutura pronta para você aproveitar
-          </p>
+          </h3>
           <p class="mt-4 text-gray-600">
             Além do seu terreno, o Quintas Dumonte oferece áreas comuns pensadas para o bem-estar coletivo e familiar.
           </p>
@@ -150,21 +150,21 @@ const onScroll = () => {
           <button 
             @click="scroll('left')"
             aria-label="Foto anterior"
-            class="rounded-full border border-gray-700 p-3 hover:bg-[#CBBD93] hover:border-[#CBBD93] text-black hover:text-[#101010] transition-all"
+            class="cursor-pointer rounded-full border border-gray-700 p-3 hover:bg-[#CBBD93] hover:border-[#CBBD93] text-black hover:text-[#101010] transition-all flex justify-center items-center h-12 w-12"
           >
             <UIcon name="i-heroicons-chevron-left" class="w-6 h-6" />
           </button>
           <button 
             @click="scroll('right')"
             aria-label="Próxima foto"
-            class="rounded-full border border-gray-700 p-3 hover:bg-[#CBBD93] hover:border-[#CBBD93] text-black hover:text-[#101010] transition-all"
+            class="cursor-pointer rounded-full border border-gray-700 p-3 hover:bg-[#CBBD93] hover:border-[#CBBD93] text-black hover:text-[#101010] transition-all flex justify-center items-center h-12 w-12"
           >
             <UIcon name="i-heroicons-chevron-right" class="w-6 h-6" />
           </button>
         </div>
       </div>
-
-      <!-- CARROSSEL -->
+    </div>
+    <!-- CARROSSEL -->
       <div 
         ref="scrollContainer"
         @scroll.passive="onScroll"
@@ -173,29 +173,29 @@ const onScroll = () => {
         <div 
           v-for="(photo, index) in photos" 
           :key="index"
-          class="snap-center snap-always shrink-0 w-[90vw] md:w-[1000px] group relative overflow-hidden shadow-xl"
+          class="snap-center snap-always shrink-0 w-screen md:w-[1000px] group relative overflow-hidden shadow-xl"
         >
           <!-- 
              UPGRADE DE TAMANHO ULTRA:
              - Mobile: w-[90vw] (Quase tela cheia)
              - Desktop: w-[1000px] (Massivo)
           -->
-          <div class="aspect-[4/3] md:aspect-[16/9] w-full overflow-hidden">
+          <div class="aspect-[3/3] md:aspect-[16/9] w-full overflow-hidden">
             <img 
               :src="photo.src" 
               :alt="photo.title" 
               loading="lazy"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+              class="h-full w-full object-cover"
             />
           </div>
           
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
           <div class="absolute bottom-0 left-0 p-6 md:p-10">
             <h3 class="text-xl md:text-4xl font-bold text-white mb-2 drop-shadow-md">
               {{ photo.title }}
             </h3>
-            <p class="text-sm md:text-xl text-gray-200 leading-relaxed opacity-100 md:opacity-0 md:translate-y-4 transition-all duration-300 md:group-hover:opacity-100 md:group-hover:translate-y-0 max-w-2xl">
+            <p class="text-sm md:text-xl text-gray-200 leading-relaxed max-w-2xl">
               {{ photo.description }}
             </p>
           </div>
@@ -220,8 +220,6 @@ const onScroll = () => {
           :aria-label="`Ir para foto ${index + 1}`"
         />
       </div>
-
-    </div>
   </section>
 </template>
 

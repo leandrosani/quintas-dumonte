@@ -33,9 +33,9 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
 
 const navLinks = [
   { label: 'O Refúgio', hash: '#' },
+  { label: 'Terrenos', hash: '#lots' },
   { label: 'Localização', hash: '#location' },
   { label: 'Galeria', hash: '#gallery' },
-  { label: 'Terrenos', hash: '#lots' },
   { label: 'Nossa hitória', hash: '#features' },
 ]
 </script>

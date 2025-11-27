@@ -27,7 +27,7 @@ useHead({
     </main>
 
     <AppFooter />
-
+    <WhatsAppButton />
   </div>
 </template>
 
